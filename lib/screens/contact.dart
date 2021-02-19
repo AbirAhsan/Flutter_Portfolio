@@ -8,6 +8,7 @@ class CustomContact extends StatelessWidget {
     return Container(
       width: _width,
       height: _height,
+      color: Colors.white,
       child: Text("My Contact"),
     );
   }

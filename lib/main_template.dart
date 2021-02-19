@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:portfolio/responsive.dart';
 import 'package:portfolio/screens/about.dart';
 import 'package:portfolio/screens/contact.dart';
 import 'package:portfolio/screens/homepage.dart';
@@ -37,10 +38,21 @@ class _MainTemplateState extends State<MainTemplate> {
           children: [
             Container(
               width: _width,
-              height: _height,
+              height: ResponsiveWidget.isLargeScreen(context)
+                  ? _height
+                  : ResponsiveWidget.isXMediumScreen(context)
+                      ? _height / 1.3
+                      : ResponsiveWidget.isMediumScreen(context)
+                          ? _height / 1.6
+                          : _height / 2,
+              child: Image.asset(
+                "assets/images/abir.jpeg",
+                fit: BoxFit.cover,
+              ),
             ),
             Container(
               width: _width,
+              height: _height,
               child: ListView.builder(
                   itemCount: itemsList.length,
                   itemBuilder: (buildContext, index) {

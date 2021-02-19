@@ -8,6 +8,7 @@ class CustomHomePage extends StatelessWidget {
     return Container(
       width: _width,
       height: _height,
+      color: Colors.transparent,
       child: Text("My Home Page"),
     );
   }
