@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/variable.dart';
 
 class CustomPortfolio extends StatelessWidget {
   @override
@@ -8,7 +9,7 @@ class CustomPortfolio extends StatelessWidget {
     return Container(
       width: _width,
       height: _height,
-      color: Colors.white,
+      color: bgColor,
       child: Text("My Portfolio"),
     );
   }

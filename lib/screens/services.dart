@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/variable.dart';
 
 class CustomServices extends StatelessWidget {
   @override
@@ -8,7 +9,7 @@ class CustomServices extends StatelessWidget {
     return Container(
       width: _width,
       height: _height,
-      color: Colors.white,
+      color: bgColor,
       child: Text("My Services"),
     );
   }

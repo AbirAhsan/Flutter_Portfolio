@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/variable.dart';
 
 class CustomContact extends StatelessWidget {
   @override
@@ -8,7 +9,7 @@ class CustomContact extends StatelessWidget {
     return Container(
       width: _width,
       height: _height,
-      color: Colors.white,
+      color: bgColor,
       child: Text("My Contact"),
     );
   }

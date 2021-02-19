@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:portfolio/variable.dart';
 
 class AboutMe extends StatefulWidget {
   @override
@@ -14,7 +15,7 @@ class _AboutMeState extends State<AboutMe> {
     return Container(
       width: _width,
       height: _height,
-      color: Colors.white,
+      color: bgColor,
       child: Text("about"),
     );
   }

@@ -7,6 +7,7 @@ import 'package:portfolio/screens/homepage.dart';
 import 'package:portfolio/screens/portfolio.dart';
 import 'package:portfolio/screens/resume.dart';
 import 'package:portfolio/screens/services.dart';
+import 'package:portfolio/variable.dart';
 
 class MainTemplate extends StatefulWidget {
   @override
@@ -33,6 +34,7 @@ class _MainTemplateState extends State<MainTemplate> {
     double _width = MediaQuery.of(context).size.width;
     double _height = MediaQuery.of(context).size.height;
     return Scaffold(
+      backgroundColor: bgColor,
       body: Container(
         child: Stack(
           children: [
@@ -47,6 +49,8 @@ class _MainTemplateState extends State<MainTemplate> {
                           : _height / 2,
               child: Image.asset(
                 "assets/images/abir.jpeg",
+                color: Colors.black.withOpacity(.5),
+                colorBlendMode: BlendMode.darken,
                 fit: BoxFit.cover,
               ),
             ),
