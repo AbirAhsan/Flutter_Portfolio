@@ -10,7 +10,7 @@ class CustomEassyLoading {
       dismissOnTap: false,
       status: "Please Wait ... ",
       indicator: Image.asset(
-        ImageVariables.loader,
+        CustomImage.loader,
         width: 100,
         height: 130,
       ),
