@@ -12,7 +12,7 @@ void main() async {
   await EasyLocalization.ensureInitialized();
 
   runApp(EasyLocalization(
-      path: "assets/langs",
+      path: "assets/langs/",
       saveLocale: true,
       supportedLocales: const [
         Locale("en", "EN"),
@@ -48,20 +48,39 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: "Abir Ahsan",
+      debugShowCheckedModeBanner: false,
+      localizationsDelegates: context.localizationDelegates,
+      //     localizationsDelegates: [
+      //       AppLocalizations.delegate,
+      //       GlobalMaterialLocalizations.delegate,
+      //  GlobalWidgetsLocalizations.delegate,
+      //  GlobalCupertinoLocalizations.delegate,],
+      supportedLocales: context.supportedLocales,
+      locale: context.locale,
       theme: ThemeData(
-        fontFamily: "Montserrat",
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
         primarySwatch: CustomColors.primaryColorCustom,
+        fontFamily: 'Montserrat',
+        // appBarTheme: AppBarTheme(
+        //   titleTextStyle: const TextStyle(
+        //       color: Colors.white,
+        //       fontFamily: "Arcon",
+        //       fontSize: 22,
+        //       fontWeight: FontWeight.bold),
+        //   iconTheme: IconThemeData(
+        //     color: CustomColors.whiteColor,
+        //   ),
+        // ),
+        // elevatedButtonTheme: ElevatedButtonThemeData(
+        //   style: ButtonStyle(
+        //     textStyle: MaterialStateProperty.all<TextStyle>(
+        //       const TextStyle(color: white, fontSize: 20, fontFamily: 'Arcon'),
+        //     ),
+        //   ),
+        // ),
       ),
+
       home: const MainScreenView(),
+      builder: EasyLoading.init(),
     );
   }
 }

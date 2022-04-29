@@ -1,4 +1,9 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+
+import '../../generated/locale_keys.g.dart';
+import '../variables/colors.dart';
+import '../variables/text_style.dart';
 
 class PortfolioScreen extends StatelessWidget {
   const PortfolioScreen({Key? key}) : super(key: key);
@@ -10,9 +15,12 @@ class PortfolioScreen extends StatelessWidget {
     return Container(
       width: _width,
       height: _height,
-      //   color: bgColor,
+      color: CustomColors.bgColor,
       padding: const EdgeInsets.all(40.0),
-      child: const Text("My Portfolio"),
+      child: Text(
+        LocaleKeys.portfolio_title.tr(),
+        style: CustomTextstyle.titleBlackBoldStyle,
+      ),
     );
   }
 }

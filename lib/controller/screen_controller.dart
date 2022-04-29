@@ -10,7 +10,7 @@ import '../views/service_screen.dart/services.dart';
 
 class ScreenController extends GetxController {
   //<<============================================ All Screens List
-  RxList<Widget?> itemsOfScreen = const <Widget?>[
+  RxList<Widget> itemsOfScreen = const <Widget>[
     HomeScreen(),
     AboutMeScreen(),
     ResumeScreen(),

@@ -19,6 +19,25 @@ class CodegenLoader extends AssetLoader{
     "name": "24/7 Virtual Assistants",
     "developedBy": "Developed by : ",
     "developer": "Xubisoft Limited"
+  },
+  "about": {
+    "title": "About",
+    "desciption": "Here is my about description"
+  },
+  "contact": {
+    "title": "My Contact"
+  },
+  "homePage": {
+    "title": "Homepage"
+  },
+  "portfolio": {
+    "title": "My Portfolio"
+  },
+  "resume": {
+    "title": "My Resume"
+  },
+  "service": {
+    "title": "My Service"
   }
 };
 static const Map<String, Map<String,dynamic>> mapLocales = {"en_EN": en_EN};

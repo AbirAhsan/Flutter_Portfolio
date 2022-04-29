@@ -9,6 +9,8 @@ class CustomColors {
   static Color whiteColor = Colors.white;
   static Color blackColor = Colors.black;
 
+  static Color bgColor = const Color.fromARGB(255, 230, 226, 226);
+
   static MaterialColor primaryColorCustom = MaterialColor(0xFF009688, color);
   static Map<int, Color> color = {
     50: const Color.fromRGBO(0, 150, 136, 1),
