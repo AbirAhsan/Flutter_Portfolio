@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:portfolio/views/variables/colors.dart';
 import 'package:portfolio/views/variables/icon_variables.dart';
+
+import '../controller/screen_controller.dart';
 
 class MainTemplate extends StatefulWidget {
   @override
@@ -26,6 +29,7 @@ class _MainTemplateState extends State<MainTemplate> {
   Widget build(BuildContext context) {
     double _width = MediaQuery.of(context).size.width;
     double _height = MediaQuery.of(context).size.height;
+    final ScreenController screenCtrl = Get.put(ScreenController());
     return Scaffold(
       backgroundColor: CustomColors.offWhite,
       body: Stack(
@@ -38,15 +42,15 @@ class _MainTemplateState extends State<MainTemplate> {
             width: _width,
             fit: BoxFit.cover,
           ),
-          // Container(
-          //   width: _width,
-          //   height: _height,
-          //   child: ListView.builder(
-          //       itemCount: itemsList.length,
-          //       itemBuilder: (buildContext, index) {
-          //         return itemsList[index];
-          //       }),
-          // ),
+          SizedBox(
+            width: _width,
+            height: _height,
+            child: ListView.builder(
+                itemCount: screenCtrl.screenList.length,
+                itemBuilder: (buildContext, index) {
+                  return screenCtrl.screenList[index];
+                }),
+          ),
           Align(
             alignment: Alignment.topRight,
             child: IconButton(
