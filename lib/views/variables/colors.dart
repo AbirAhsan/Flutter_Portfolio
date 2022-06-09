@@ -4,7 +4,7 @@ class CustomColors {
   static const Color primary = Color(0xFF0F436B);
   static const Color secondary = Color(0xFF0067b3);
 
-  static const Color whiteColor = Color(0xFFFFFFFF);
+  static const Color white = Color(0xFFFFFFFF);
   static const Color offWhite = Color(0xFFD2D1D1);
   static const Color wrong = Color(0xFFFE0404);
   static const Color success = Color(0xFF4CAF50);
