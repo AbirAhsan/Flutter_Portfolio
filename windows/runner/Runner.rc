@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.flutterdeveloper" "\0"
-            VALUE "FileDescription", "abirahsan" "\0"
+            VALUE "CompanyName", "com.abirahsan" "\0"
+            VALUE "FileDescription", "portfolio" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "abirahsan" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2022 com.flutterdeveloper. All rights reserved." "\0"
-            VALUE "OriginalFilename", "abirahsan.exe" "\0"
-            VALUE "ProductName", "abirahsan" "\0"
+            VALUE "InternalName", "portfolio" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2022 com.abirahsan. All rights reserved." "\0"
+            VALUE "OriginalFilename", "portfolio.exe" "\0"
+            VALUE "ProductName", "portfolio" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
